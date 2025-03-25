@@ -30,7 +30,7 @@ token <- readRDS("secrets/api_token.RDS")
 
 # Load the metadata, count and length ----
 # This way does not include the zeros where a species isn't present - it returns a much smaller dataframe
-CheckEM::ga_api_all_data(synthesis_id = "XXXX", # change the synthesis_id here
+CheckEM::ga_api_all_data(synthesis_id = "21", # change the synthesis_id here
                          token = token,
                          dir = "data/raw/",
                          include_zeros = FALSE)
